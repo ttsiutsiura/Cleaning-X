@@ -79,8 +79,8 @@ button {
 }
 @media screen and (min-width: 1200px) {
   section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 240px;
+    padding-bottom: 240px;
   }
 }
 
@@ -131,11 +131,63 @@ input {
   font-size: 18px;
 }
 
-.primary-btn {
+.primary-button {
   width: 174px;
   height: 54px;
   font-size: 16px;
   border-radius: 14px;
   color: white;
-  background-color: #0075FF;
+  background-color: #0075ff;
+}
+
+.hero-contact {
+  margin-left: 116px;
+}
+
+.hero-contact__link {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #211F54;
+}
+
+.hero-section {
+  padding-top: 230px;
+  padding-bottom: 140px;
+  height: 734px;
+}
+
+.hero-title {
+  width: 518px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 74px;
+  color: #211F54;
+}
+
+.hero-text {
+  width: 590px;
+  margin-bottom: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  /* or 143% */
+  color: #6E7191;
+}
+
+.hero-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-contact__text {
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #6E7191;
 }/*# sourceMappingURL=main.css.map */

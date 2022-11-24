@@ -1,20 +1,32 @@
 .navigation-list {
-    gap: 22px;
-    font-size: 18px;
-    display: flex;
+  gap: 22px;
+  font-size: 18px;
+  display: flex;
 }
 
 .cart {
-    margin-left: auto;
-    margin-right: 22px;
-    font-size: 18px;
+  margin-left: auto;
+  margin-right: 22px;
+  font-size: 18px;
 }
 
-.primary-btn {
-    width: 174px;
-    height: 54px;
-    font-size: 16px;
-    border-radius: 14px;
-    color: white;
-    background-color: #0075FF;
+.primary-button {
+  width: 174px;
+  height: 54px;
+  font-size: 16px;
+  border-radius: 14px;
+  color: white;
+  background-color: #0075ff;
+}
+
+.hero-contact {
+    margin-left: 116px;
+}
+
+.hero-contact__link {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+
+  color: $primary-text-color;
 }

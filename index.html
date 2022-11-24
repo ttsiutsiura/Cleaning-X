@@ -18,35 +18,42 @@
       <div class="container header">
         <a href="/index.html" class="logo">
           <svg width="178" height="42">
-            <use href="/images/icons.svg#icon-logo" ></use>
+            <use href="/images/icons.svg#icon-logo"></use>
           </svg>
         </a>
 
         <nav>
           <ul class="navigation-list">
-            <li class="navigation-list__item">Home</li>
-            <li class="navigation-list__item">About</li>
-            <li class="navigation-list__item">Services</li>
-            <li class="navigation-list__item">Pages</li>
-            <li class="navigation-list__item">Contact</li>
+            <li class="navigation-list__item"><a href="">Home</a></li>
+            <li class="navigation-list__item"><a href="">About</a></li>
+            <li class="navigation-list__item"><a href="">Services</a></li>
+            <li class="navigation-list__item"><a href="">Pages</a></li>
+            <li class="navigation-list__item"><a href="">Contact</a></li>
           </ul>
         </nav>
 
-        <p class="cart">Cart (0)</p>
-        <button class="primary-btn">Get a free quote</button>
+        <a href="" class="cart">Cart (0)</a>
+        <button class="primary-button" type="button">Get a free quote</button>
       </div>
     </header>
 
     <main>
-      <section>
-        <h1>Quality cleaning for your home</h1>
-        <p>
-          Condimentum mauris sit cursus amet id non neque pharetra nulla ornare sed facilisis
-          senectus dapibus nibh ultrices eget suscipit aliquet et nulla magna lacus penatibus.
-        </p>
-        <button>Get a free quote</button>
-        <p>Call us now</p>
-        <a href="tel:(414) 567 - 2109">(414) 567 - 2109</a>
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="hero-title">Quality cleaning for your home</h1>
+          <p class="hero-text">
+            Condimentum mauris sit cursus amet id non neque pharetra nulla ornare sed facilisis
+            senectus dapibus nibh ultrices eget suscipit aliquet et nulla magna lacus penatibus.
+          </p>
+
+          <div class="hero-actions">
+            <button class="primary-button">Get a free quote</button>
+            <address class="hero-contact">
+              <p class="hero-contact__text">Call us now</p>
+              <a href="tel:(414) 567 - 2109" class="hero-contact__link">(414) 567 - 2109</a>
+            </address>
+          </div>
+        </div>
       </section>
 
       <section>
