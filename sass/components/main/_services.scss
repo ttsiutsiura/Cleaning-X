@@ -8,9 +8,27 @@
   color: $primary-text-color;
 }
 
+.service-button {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  width: 174px;
+  height: 54px;
+  font-size: 16px;
+  border-radius: 14px;
+  line-height: 20px;
+
+  text-align: center;
+  border: 1px solid #eff0f6;
+
+  color: $primary-text-color;
+  background-color: white;
+}
+
 .service-list {
   display: flex;
   gap: 30px;
+  margin-bottom: 240px;
 }
 
 .service-list .list-item-s {
@@ -58,4 +76,56 @@
   text-align: center;
 
   color: $secondary-text-color;
+}
+
+.covid {
+  align-items: center;
+  margin-bottom: 200px;
+  width: 1220px;
+  height: 676px;
+  background-color: #211f54;
+  border-radius: 24px;
+  background-image: url(/images/services/covid-bacimg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.covid-container {
+  transform: translateY(50%);
+  width: 556px;
+  margin-left: 590px;
+  margin-right: 110px;
+}
+
+.covid-caption {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.covid-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: white;
+  width: 490px;
+  margin-bottom: 20px;
+}
+
+.covid-text {
+  font-size: 21px;
+  line-height: 30px;
+  width: 474px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.covid-contact {
+  display: flex;
 }
