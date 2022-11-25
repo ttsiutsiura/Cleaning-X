@@ -1,5 +1,8 @@
-.section-title {
+.advantages-title {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
+  width: 608px;
   font-weight: 700;
   font-size: 48px;
   line-height: 58px;
@@ -9,66 +12,48 @@
   color: $primary-text-color;
 }
 
-.text {
-  margin-bottom: 20px;
+.advantages-text {
   margin-left: auto;
   margin-right: auto;
-  width: 700px;
+
+  width: 702px;
   font-size: 21px;
   line-height: 30px;
+
   text-align: center;
 
   color: $secondary-text-color;
 }
 
-.work-list {
-  margin-top: 64px;
-  margin-bottom: 56px;
+.stats-list {
   display: flex;
-  gap: 40px;
+  justify-content: space-around;
+  margin-top: 32px;
 }
 
-.work-step {
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
+.stats-list span {
   font-weight: 700;
   font-size: 28px;
   line-height: 36px;
 
-  text-align: center;
-
   color: $primary-text-color;
 }
 
-.step-text {
-  font-size: 21px;
-  line-height: 30px;
-  text-align: center;
+.list-item {
+  font-size: 16px;
+  line-height: 18px;
+
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
 
   color: $secondary-text-color;
 }
 
-.work-image {
+.advantages-video {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
-}
-
-.secondary-button {
-  width: 174px;
-  height: 54px;
-  font-size: 16px;
-  border-radius: 14px;
-  line-height: 20px;
-
-  text-align: center;
-
-  color: $primary-text-color;
-}
-
-.button-list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+  margin-top: 40px;
+  width: 1000px;
+  height: 560px;
+  background-image: url(/images/advantages/advantages-preview.png);
 }
