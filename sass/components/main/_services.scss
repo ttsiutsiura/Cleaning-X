@@ -129,3 +129,113 @@
 .covid-contact {
   display: flex;
 }
+
+.house {
+  width: 1220px;
+  height: 680px;
+  background-image: url(/images/services/house-details.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-bottom: 200px;
+}
+
+.house-info {
+  width: 480px;
+}
+
+.house-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: $primary-text-color;
+}
+
+.house-text {
+  margin-bottom: 26px;
+  font-size: 18px;
+  line-height: 30px;
+
+  color: $secondary-text-color;
+}
+
+.house-list {
+  width: 350px;
+  height: 188px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.house-list li {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+
+  color: $primary-text-color;
+
+  &:not(:last-child) {
+    margin-bottom: 26px;
+  }
+}
+
+.differents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(/images/services/process-of-cleaning.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  width: 1220px;
+  height: 588px;
+}
+
+.diff-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: $primary-text-color;
+  margin-bottom: 20px;
+  width: 346px;
+}
+
+.diff-text {
+  font-size: 18px;
+  line-height: 30px;
+
+  color: $secondary-text-color;
+  margin-bottom: 26px;
+  width: 496px;
+}
+
+.diff-list {
+  display: flex;
+  gap: 60px;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+
+  color: $primary-text-color;
+  margin-bottom: 48px;
+}
+
+.diff-list span {
+  font-size: 54px;
+  line-height: 66px;
+
+  color: $accent-color;
+}
+
+.diff-list .span2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: $secondary-text-color
+}
