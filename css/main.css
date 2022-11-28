@@ -579,4 +579,151 @@ input {
   font-size: 18px;
   line-height: 24px;
   color: #6E7191;
+}
+
+.res-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #211F54;
+  margin-bottom: 10px;
+}
+
+.res-text {
+  font-size: 21px;
+  line-height: 30px;
+  color: #6E7191;
+  width: 474px;
+}
+
+.res-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  right: 0px;
+  top: 24px;
+}
+
+.res-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.first-card {
+  background-image: url(/images/resources/vacuumres.png);
+  height: 630px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.second-card {
+  background-image: url(/images/resources/girlres.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.res-list li {
+  width: 596px;
+  height: 630px;
+}
+
+.res-articles {
+  width: 536px;
+  background-color: white;
+  padding: 50px;
+  border-radius: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.article-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: #211f54;
+  margin-bottom: 18px;
+}
+
+.articles-text {
+  font-size: 21px;
+  line-height: 30px;
+  /* or 143% */
+  color: #6e7191;
+  margin-bottom: 14px;
+}
+
+.articles-date {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  /* identical to box height, or 111% */
+  color: #211f54;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 637px;
+}
+
+.f-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  /* or 129% */
+  color: #211f54;
+  width: 256px;
+  margin-bottom: 8px;
+}
+
+.f-text {
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+  color: #6e7191;
+  width: 304px;
+  margin-bottom: 34px;
+}
+
+.f-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.f-list li {
+  width: 36px;
+  height: 36px;
+  background-color: #6e7191;
+  border-radius: 8px;
+}
+
+.f2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

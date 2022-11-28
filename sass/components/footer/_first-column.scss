@@ -1,0 +1,41 @@
+.flex {
+  display: flex;
+  height: 637px;
+}
+
+.f-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  /* or 129% */
+
+  color: #211f54;
+  width: 256px;
+  margin-bottom: 8px;
+}
+
+.f-text {
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  color: #6e7191;
+  width: 304px;
+  margin-bottom: 34px;
+}
+
+.f-list {
+    display: flex;
+    gap: 16px;
+}
+
+.f-list li {
+    width: 36px;
+    height: 36px;
+    background-color: #6e7191;
+    border-radius: 8px;
+}
+
+.f2 {
+    display: flex;
+}
