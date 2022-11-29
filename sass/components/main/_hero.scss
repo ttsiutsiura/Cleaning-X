@@ -1,4 +1,4 @@
-.hero-section {
+.hero {
   padding-top: 185px;
   padding-bottom: 185px;
   background-image: url(/images/hero/hero-background.png);
@@ -7,7 +7,7 @@
   background-position: right;
 }
 
-.hero-title {
+.hero__title {
   width: 518px;
 
   font-family: 'Roboto';
@@ -16,9 +16,10 @@
   line-height: 74px;
 
   color: $primary-text-color;
+  margin-bottom: 22px;
 }
 
-.hero-text {
+.hero__text {
   width: 590px;
   margin-bottom: 40px;
 
@@ -34,13 +35,45 @@
 
 .hero-actions {
   display: flex;
+  gap: 28px;
+  align-items: center;
 }
 
-.hero-contact__text {
+.tel {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.tel__button {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #DCDDEB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(20, 20, 43, 0.04);
+}
+
+
+.tel__text {
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 1.6px;
   text-transform: uppercase;
 
   color: $secondary-text-color;
+}
+
+.tel__number {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  /* identical to box height, or 129% */
+
+  color: #211f54;
+  margin-top: 4px;
+  display: block;
 }

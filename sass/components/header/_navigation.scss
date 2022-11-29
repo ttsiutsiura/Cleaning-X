@@ -32,8 +32,7 @@
 }
 
 .primary-button {
-  width: 174px;
-  height: 54px;
+  padding: 26px 38px;
   font-size: 16px;
   border-radius: 14px;
   color: white;
@@ -48,14 +47,8 @@
   }
 }
 
-.hero-contact {
-  margin-left: 116px;
+.header__primary-button {
+  padding: 18px 24px;
 }
 
-.hero-contact__link {
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 36px;
 
-  color: $primary-text-color;
-}
