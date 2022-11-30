@@ -1,7 +1,7 @@
 .hero {
   padding-top: 185px;
   padding-bottom: 185px;
-  background-image: url(/images/hero/hero-background.png);
+  background-image: url(/images/hero/hero-background.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -50,13 +50,59 @@
   height: 72px;
   border-radius: 50%;
   background-color: white;
-  border: 1px solid #DCDDEB;
+  border: 1px solid #dcddeb;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 4px 10px rgba(20, 20, 43, 0.04);
+
+  &:hover + .tel__text,
+  &:focus + .tel__text {
+    color: $accent-color;
+  }
+
+  &:hover .tel__icon {
+    animation-name: call;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+  }
 }
 
+@keyframes call {
+  0% {
+  }
+
+  20% {
+    transform: rotate(-12deg);
+  }
+
+  40% {
+    transform: rotate(12deg);
+  }
+
+  50% {
+    transform: rotate(-12deg);
+  }
+
+  60% {
+    transform: rotate(12deg);
+  }
+
+  70% {
+    transform: rotate(-12deg);
+  }
+
+  80% {
+    transform: rotate(12deg);
+  }
+
+  90% {
+    transform: rotate(-12deg);
+  }
+
+  100% {
+  }
+}
 
 .tel__text {
   font-size: 16px;
@@ -71,7 +117,6 @@
   font-weight: 700;
   font-size: 28px;
   line-height: 36px;
-  /* identical to box height, or 129% */
 
   color: #211f54;
   margin-top: 4px;

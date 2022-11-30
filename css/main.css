@@ -155,9 +155,12 @@ input {
 
 .primary-button {
   padding: 26px 38px;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 20px;
   border-radius: 14px;
+  font-weight: 700;
   color: white;
+  font-family: "Roboto";
   background-color: #0075ff;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -173,12 +176,15 @@ input {
 
 .header__primary-button {
   padding: 18px 24px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 .hero {
   padding-top: 185px;
   padding-bottom: 185px;
-  background-image: url(/images/hero/hero-background.png);
+  background-image: url(/images/hero/hero-background.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -231,7 +237,7 @@ input {
   height: 72px;
   border-radius: 50%;
   background-color: white;
-  border: 1px solid #DCDDEB;
+  border: 1px solid #dcddeb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,7 +250,79 @@ input {
   -webkit-box-shadow: 0px 4px 10px rgba(20, 20, 43, 0.04);
           box-shadow: 0px 4px 10px rgba(20, 20, 43, 0.04);
 }
+.tel__button:hover + .tel__text, .tel__button:focus + .tel__text {
+  color: #0075FF;
+}
+.tel__button:hover .tel__icon {
+  -webkit-animation-name: call;
+          animation-name: call;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
 
+@-webkit-keyframes call {
+  20% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  40% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  50% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  60% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  70% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  80% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  90% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+}
+
+@keyframes call {
+  20% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  40% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  50% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  60% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  70% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  80% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  90% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+}
 .tel__text {
   font-size: 16px;
   line-height: 18px;
@@ -257,7 +335,6 @@ input {
   font-weight: 700;
   font-size: 28px;
   line-height: 36px;
-  /* identical to box height, or 129% */
   color: #211f54;
   margin-top: 4px;
   display: block;
@@ -316,18 +393,29 @@ input {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+  display: block;
 }
 
 .secondary-button {
-  width: 174px;
-  height: 54px;
-  font-size: 16px;
   border-radius: 14px;
+  font-family: "Roboto";
+  font-size: 18px;
   line-height: 20px;
+  padding: 26px 38px;
   text-align: center;
-  border: 1px solid #EFF0F6;
+  border: 1px solid #eff0f6;
   color: #211F54;
   background-color: white;
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.secondary-button:hover, .secondary-button:focus {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
 }
 
 .button-list {

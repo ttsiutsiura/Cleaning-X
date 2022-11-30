@@ -53,20 +53,29 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+  display: block;
 }
 
 .secondary-button {
-  width: 174px;
-  height: 54px;
-  font-size: 16px;
   border-radius: 14px;
+  font-family: 'Roboto';
+  font-size: 18px;
   line-height: 20px;
+  padding: 26px 38px;
 
   text-align: center;
-  border: 1px solid #EFF0F6;
+  border: 1px solid #eff0f6;
 
   color: $primary-text-color;
   background-color: white;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: translateY(-6px);
+  }
 }
 
 .button-list {
