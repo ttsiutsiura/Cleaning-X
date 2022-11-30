@@ -85,7 +85,7 @@ button {
   }
 }
 
-ul {
+ul, ol {
   padding-left: 0;
   margin: 0;
   list-style: none;
@@ -190,7 +190,7 @@ input {
   background-position: right;
 }
 
-.hero__title {
+.hero-title {
   width: 518px;
   font-family: "Roboto";
   font-weight: 700;
@@ -200,7 +200,7 @@ input {
   margin-bottom: 22px;
 }
 
-.hero__text {
+.hero-text {
   width: 590px;
   margin-bottom: 40px;
   font-family: "Roboto";
@@ -349,18 +349,17 @@ input {
   color: #211F54;
 }
 
-.text {
+.section-subtitle {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 700px;
   font-size: 21px;
   line-height: 30px;
   text-align: center;
   color: #6E7191;
 }
 
-.work-list {
+.step-list {
   margin-top: 64px;
   margin-bottom: 56px;
   display: -webkit-box;
@@ -369,7 +368,7 @@ input {
   gap: 40px;
 }
 
-.work-step {
+.step-list__title {
   margin-left: auto;
   margin-right: auto;
   width: -webkit-fit-content;
@@ -380,9 +379,10 @@ input {
   line-height: 36px;
   text-align: center;
   color: #211F54;
+  margin-bottom: 16px;
 }
 
-.step-text {
+.step-list__subtitle {
   font-size: 21px;
   line-height: 30px;
   text-align: center;
@@ -428,16 +428,8 @@ input {
   gap: 30px;
 }
 
-.advantages-title {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  width: 608px;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
-  text-align: center;
-  color: #211F54;
+.about__section-title {
+  margin-top: 240px;
 }
 
 .advantages-text {
@@ -450,7 +442,7 @@ input {
   color: #6E7191;
 }
 
-.stats-list {
+.stat-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -459,14 +451,30 @@ input {
   margin-top: 32px;
 }
 
-.stats-list span {
+.stat-list__circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 1px solid #DCDDEB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.stats-list__accent {
   font-weight: 700;
   font-size: 28px;
   line-height: 36px;
   color: #211F54;
 }
 
-.list-item {
+.stat-list__item {
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 1.6px;
