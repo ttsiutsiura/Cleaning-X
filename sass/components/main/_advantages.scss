@@ -17,7 +17,9 @@
 
 .stat-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 96px;
+
   margin-top: 32px;
 }
 
@@ -25,7 +27,7 @@
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  border: 1px solid #DCDDEB;
+  border: 1px solid #dcddeb;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,6 +42,9 @@
 }
 
 .stat-list__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
   font-size: 16px;
   line-height: 18px;
 
@@ -49,11 +54,27 @@
   color: $secondary-text-color;
 }
 
-.advantages-video {
+.stat-list__accent {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  /* identical to box height, or 129% */
+
+  color: #211f54;
+}
+
+.video-thumb__video {
+  width: 100%;
+  height: 100%;
+  border-radius: 22px;
+}
+
+.video-thumb {
+  width: 1010px;
+  height: 570px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
-  width: 1000px;
-  height: 560px;
-  background-image: url(/images/advantages/advantages-preview.png);
+  border-radius: 52px;
 }
+

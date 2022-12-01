@@ -212,7 +212,7 @@ input {
   color: #6E7191;
 }
 
-.hero-actions {
+.actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,8 +233,8 @@ input {
 }
 
 .tel__button {
-  width: 72px;
-  height: 72px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background-color: white;
   border: 1px solid #dcddeb;
@@ -446,8 +446,10 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 96px;
   margin-top: 32px;
 }
 
@@ -455,7 +457,7 @@ input {
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  border: 1px solid #DCDDEB;
+  border: 1px solid #dcddeb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,6 +477,13 @@ input {
 }
 
 .stat-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 1.6px;
@@ -482,37 +491,37 @@ input {
   color: #6E7191;
 }
 
-.advantages-video {
+.stat-list__accent {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  /* identical to box height, or 129% */
+  color: #211f54;
+}
+
+.video-thumb__video {
+  width: 100%;
+  height: 100%;
+  border-radius: 22px;
+}
+
+.video-thumb {
+  width: 1010px;
+  height: 570px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
-  width: 1000px;
-  height: 560px;
-  background-image: url(/images/advantages/advantages-preview.png);
+  border-radius: 52px;
 }
 
-.service-title {
-  width: 476px;
-  margin-bottom: 60px;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
-  color: #211F54;
+.services__section-title {
+  text-align: left;
 }
 
-.service-button {
+.services__secondary-button {
   position: absolute;
   top: 30px;
   right: 15px;
-  width: 174px;
-  height: 54px;
-  font-size: 16px;
-  border-radius: 14px;
-  line-height: 20px;
-  text-align: center;
-  border: 1px solid #eff0f6;
-  color: #211F54;
-  background-color: white;
 }
 
 .service-list {
@@ -521,29 +530,33 @@ input {
   display: flex;
   gap: 30px;
   margin-bottom: 240px;
+  margin-top: 38px;
 }
 
-.service-list .list-item-s {
-  padding-bottom: 30px;
+.service-list__item {
   width: 388px;
+  height: 494px;
   border: 1px solid #eff0f6;
   border-radius: 16px;
+  padding: 28px 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.service-list .list-item-s:nth-child(1) {
-  padding-top: 83px;
-}
-
-.service-list .list-item-s:nth-child(2) {
-  padding-top: 49px;
-}
-
-.service-list .list-item-s:nth-child(3) {
-  padding-top: 73px;
-}
-
-.list-caption {
+.service-list__caption {
   margin-top: 24px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 24px;
   line-height: 34px;
@@ -551,15 +564,7 @@ input {
   color: #211f54;
 }
 
-.service-image {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.service-text {
-  margin-left: auto;
-  margin-right: auto;
-  width: 312px;
+.service-list__text {
   font-size: 21px;
   line-height: 30px;
   text-align: center;
@@ -567,29 +572,31 @@ input {
 }
 
 .covid {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 200px;
   width: 1220px;
   height: 676px;
   background-color: #211f54;
   border-radius: 24px;
-  background-image: url(/images/services/covid-bacimg.png);
+  background-image: url(/images/services/covid-back.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .covid-container {
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  width: 556px;
-  margin-left: 590px;
-  margin-right: 110px;
+  margin-right: 74px;
 }
 
-.covid-caption {
+.covid-container__caption {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
@@ -599,27 +606,27 @@ input {
   margin-bottom: 16px;
 }
 
-.covid-title {
+.covid__tel-text {
+  color: WHITE;
+}
+
+.covid__tel-number {
+  color: white;
+}
+
+.covid-container__title {
   font-weight: 700;
   font-size: 48px;
   line-height: 58px;
   color: white;
-  width: 490px;
   margin-bottom: 20px;
 }
 
-.covid-text {
+.covid-container__text {
   font-size: 21px;
   line-height: 30px;
-  width: 474px;
   color: white;
-  margin-bottom: 12px;
-}
-
-.covid-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-bottom: 16px;
 }
 
 .house {

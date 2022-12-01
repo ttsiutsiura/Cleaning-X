@@ -48,7 +48,7 @@
             senectus dapibus nibh ultrices eget suscipit aliquet et nulla magna lacus penatibus.
           </p>
 
-          <div class="hero-actions">
+          <div class="actions">
             <button class="primary-button" type="button">Get a free quote</button>
             <address class="tel">
               <a href="tel:(414) 567 - 2109" class="tel__button">
@@ -117,8 +117,10 @@
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </div>
-            clients <br />
-            <span class="stat-list__accent">3,480+</span>
+            <div class="thumb">
+              Clients <br />
+              <span class="stat-list__accent">3,480+</span>
+            </div>
           </li>
           <li class="stat-list__item">
             <div class="stat-list__circle">
@@ -126,8 +128,10 @@
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </div>
-            Jobs done <br />
-            <span class="stat-list__accent">12,540+</span>
+            <div class="thumb">
+              Jobs done <br />
+              <span class="stat-list__accent">12,540+</span>
+            </div>
           </li>
           <li class="stat-list__item">
             <div class="stat-list__circle">
@@ -135,42 +139,52 @@
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </div>
-            Employees <br />
-            <span class="stat-list__accent">100+</span>
+            <div class="stat-list__thumb">
+              Employees <br />
+              <span class="stat-list__accent">100+</span>
+            </div>
           </li>
         </ul>
-        <div class="advantages-video">
-          <!-- <button>
-              X
-            </button> -->
+        <div class="video-thumb">
+          <iframe
+            src="https://www.youtube.com/embed/-C-ic2H24OU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="video-thumb__video"
+          ></iframe>
         </div>
       </section>
 
       <section class="services">
         <div class="container">
-          <h2 class="service-title">Take a look at our professional services</h2>
-          <button class="service-button">Explore services</button>
+          <h2 class="section-title services__section-title">
+            Take a look at our <br />
+            professional services
+          </h2>
+          <button class="secondary-button services__secondary-button">Explore services</button>
           <ul class="service-list">
-            <li class="list-item-s">
-              <img src="/images/services/house.png" alt="" class="service-image" />
-              <p class="list-caption">House cleaning</p>
-              <p class="service-text">
+            <li class="service-list__item">
+              <img src="/images/services/house.png" alt="" class="service-list__image" />
+              <p class="service-list__caption">House cleaning</p>
+              <p class="service-list__text">
                 Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel
                 facilisis volutpat est.
               </p>
             </li>
-            <li class="list-item-s">
-              <img src="/images/services/office.png" alt="" class="service-image" />
-              <p class="list-caption">Office cleaning</p>
-              <p class="service-text">
+            <li class="service-list__item">
+              <img src="/images/services/office.png" alt="" class="service-list__image" />
+              <p class="service-list__caption">Office cleaning</p>
+              <p class="service-list__text">
                 Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel
                 facilisis volutpat est.
               </p>
             </li>
-            <li class="list-item-s">
-              <img src="/images/services/factory.png" alt="" class="service-image" />
-              <p class="list-caption">Industrial cleaning</p>
-              <p class="service-text">
+            <li class="service-list__item">
+              <img src="/images/services/factory.png" alt="" class="service-list__image" />
+              <p class="service-list__caption">Industrial cleaning</p>
+              <p class="service-list__text">
                 Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel
                 facilisis volutpat est.
               </p>
@@ -179,22 +193,32 @@
 
           <div class="covid">
             <div class="covid-container">
-              <p class="covid-caption">Covid-19 sanitization</p>
-              <h2 class="covid-title">
-                We follow guidelines to keep you safe from the COVID-19 virus
+              <p class="covid-container__caption">Covid-19 sanitization</p>
+              <h2 class="covid-container__title">
+                We follow guidelines <br />
+                to keep you safe from <br />
+                the COVID-19 virus
               </h2>
-              <p class="covid-text">
-                Lobortis mattis odio leo eget mauris met aliquet semper molestie sollicitudin congue
-                massa mauris lectus.
+              <p class="covid-container__text">
+                Lobortis mattis odio leo eget mauris met aliquet <br />
+                semper molestie sollicitudin congue massa <br />
+                mauris lectus.
               </p>
 
-              <address class="covid-contact">
-                <button class="primary-button">Get a free quote</button>
-                <div>
-                  <p class="covid-contact__text">Call us now</p>
-                  <a href="tel:(414) 567 - 2109" class="covid-contact__link">(414) 567 - 2109</a>
-                </div>
-              </address>
+              <div class="actions">
+                <button class="primary-button" type="button">Get a free quote</button>
+                <address class="tel">
+                  <a href="tel:(414) 567 - 2109" class="tel__button">
+                    <svg width="34" height="34" class="tel__icon">
+                      <use href="/images/icons.svg#icon-phone"></use>
+                    </svg>
+                  </a>
+                  <p class="tel__text covid__tel-text">
+                    Call us now<br />
+                    <span class="tel__number covid__tel-number">(414) 567 - 2109</span>
+                  </p>
+                </address>
+              </div>
             </div>
           </div>
           <div class="house">

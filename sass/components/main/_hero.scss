@@ -33,7 +33,7 @@
   color: $secondary-text-color;
 }
 
-.hero-actions {
+.actions {
   display: flex;
   gap: 28px;
   align-items: center;
@@ -46,8 +46,8 @@
 }
 
 .tel__button {
-  width: 72px;
-  height: 72px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background-color: white;
   border: 1px solid #dcddeb;
