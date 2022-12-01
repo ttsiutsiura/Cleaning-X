@@ -514,8 +514,20 @@ input {
   border-radius: 52px;
 }
 
-.services__section-title {
+.service-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
   text-align: left;
+  color: #211F54;
+}
+
+.service-subtitle {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  color: #6e7191;
 }
 
 .services__secondary-button {
@@ -632,7 +644,7 @@ input {
 .house {
   width: 1220px;
   height: 680px;
-  background-image: url(/images/services/house-details.png);
+  background-image: url(/images/services/house-details.svg);
   background-repeat: no-repeat;
   background-size: contain;
   display: -webkit-box;
@@ -647,11 +659,7 @@ input {
   margin-bottom: 200px;
 }
 
-.house-info {
-  width: 480px;
-}
-
-.house-title {
+.house-continer__title {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 48px;
@@ -659,7 +667,7 @@ input {
   color: #211F54;
 }
 
-.house-text {
+.house-continer__text {
   margin-bottom: 26px;
   font-size: 18px;
   line-height: 30px;
@@ -668,7 +676,7 @@ input {
 
 .house-list {
   width: 350px;
-  height: 188px;
+  height: 190px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -676,21 +684,41 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  row-gap: 24px;
+  -webkit-column-gap: 54px;
+     -moz-column-gap: 54px;
+          column-gap: 54px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 48px;
 }
 
-.house-list li {
+.house-list__item {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
   color: #211F54;
 }
-.house-list li:not(:last-child) {
-  margin-bottom: 26px;
+
+.house-list__item::before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  background-image: url(/images/anothercheck.svg);
+  display: inline-block;
 }
 
-.differents {
+.advantages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
