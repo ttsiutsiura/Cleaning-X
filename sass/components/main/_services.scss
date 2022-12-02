@@ -136,7 +136,7 @@
   color: $primary-text-color;
 }
 
-.house-continer__text {
+.service-subtitle {
   margin-bottom: 26px;
   font-size: 18px;
   line-height: 30px;
@@ -176,10 +176,7 @@
   display: inline-block;
 }
 
-.advantages {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.differences {
   background-image: url(/images/services/process-of-cleaning.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -188,47 +185,41 @@
   height: 588px;
 }
 
-.diff-title {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
-
-  color: $primary-text-color;
-  margin-bottom: 20px;
-  width: 346px;
-}
-
-.diff-text {
-  font-size: 18px;
-  line-height: 30px;
-
-  color: $secondary-text-color;
-  margin-bottom: 26px;
-  width: 496px;
-}
-
-.diff-list {
+.difference-list {
   display: flex;
   gap: 60px;
-  font-weight: 700;
-  font-size: 54px;
-  line-height: 66px;
-
-  color: $primary-text-color;
   margin-bottom: 48px;
 }
 
-.diff-list span {
-  font-size: 54px;
-  line-height: 66px;
-
-  color: $accent-color;
-}
-
-.diff-list .span2 {
+.difference-list__item {
+  display: flex;
+  flex-direction: column;
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
+  // line-height: 24px;
+  /* identical to box height, or 133% */
 
-  color: $secondary-text-color;
+  color: #6e7191;
+}
+
+.difference-list__number {
+  font-weight: 700;
+  font-size: 54px;
+  // line-height: 66px;
+  /* identical to box height, or 122% */
+
+  color: #211f54;
+}
+
+.difference-list__plus {
+  font-size: 54px;
+  // line-height: 66px;
+  font-weight: 400;
+  /* identical to box height, or 122% */
+
+  color: #0075ff;
+}
+
+.difference-list__thumb {
+  margin-bottom: 4px;
 }
