@@ -173,16 +173,23 @@
   width: 26px;
   height: 26px;
   background-image: url(/images/anothercheck.svg);
-  display: inline-block;
+  display: inline-block; 
 }
 
 .differences {
-  background-image: url(/images/services/process-of-cleaning.png);
+  background-image: url(/images/services/backcleaning.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
   width: 1220px;
   height: 588px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.differences-container {
+  width: fit-content;
 }
 
 .difference-list {
