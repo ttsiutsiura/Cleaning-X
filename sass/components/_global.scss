@@ -1,11 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  
-  color: var(--primary-text-color);
-  background-color: var(--primary-background-color);
+
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+
+  background-color: var(--primary-background-color);
 }
 
 .visually-hidden {
@@ -56,10 +61,9 @@ p {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
-
-  display: block;
 }
 
 address {
@@ -68,13 +72,17 @@ address {
 
 button {
   display: block;
-  cursor: pointer;
+  padding: 0;
+
   border: none;
   border-radius: 4px;
-  padding: 0;
+
+  cursor: pointer;
 }
 
 section {
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -86,7 +94,14 @@ section {
   }
 }
 
-ul, ol {
+.section-border {
+  width: fit-content;
+  
+  border-bottom: 1px solid #dcddeb;
+}
+
+ul,
+ol {
   padding-left: 0;
   margin: 0;
 
