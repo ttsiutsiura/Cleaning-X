@@ -306,29 +306,29 @@
             <button class="secondary-button">Browse articles</button>
           </ul>
 
-          <ul class="res-list">
-            <li class="first-card">
-              <article class="res-articles">
-                <h1 class="article-title">
+          <ul class="article-list">
+            <li class="article-list__item">
+              <article class="article-list__article">
+                <h1 class="article-list__caption">
                   8 best vacuum cleaners to clean any mess for your home in 2022
                 </h1>
-                <p class="articles-text">
+                <p class="article-list__text">
                   Lorem ipsum dolor sit amet conse ctetur adip iscing elit justo quis odio sit sit
                   ac port titor sit males.
                 </p>
-                <p class="articles-date">Jan 28, 2022</p>
+                <p class="article-list__date">Jan 28, 2022</p>
               </article>
             </li>
-            <li class="second-card">
-              <article class="res-articles">
-                <h1 class="article-title">
+            <li class="article-list__item">
+              <article class="article-list__article">
+                <h1 class="article-list__caption">
                   How to properly disinfect your phone and other electronics
                 </h1>
-                <p class="articles-text">
+                <p class="article-list__text">
                   Lorem ipsum dolor sit amet conse ctetur adip iscing elit justo quis odio sit sit
                   ac port titor sit males.
                 </p>
-                <p class="articles-date">Feb 1, 2022</p>
+                <p class="article-list__date">Feb 1, 2022</p>
               </article>
             </li>
           </ul>
@@ -336,38 +336,62 @@
       </section>
     </main>
 
-    <footer>
-      <div class="container flex">
-        <div class="f1">
-          <p class="f-title">Quality cleaning for your home</p>
-          <p class="f-text">Lorem ipsum dolor sit amet cteturdo adipiscing elit, sed do eiusmo.</p>
-          <ul class="f-list">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer-top">
+          <div class="footer-info">
+            <p class="footer-info__title">Quality cleaning for your home</p>
+            <p class="footer-info__text">
+              Lorem ipsum dolor sit amet cteturdo adipiscing elit, sed do eiusmo.
+            </p>
+            <ul class="footer-info__list">
+              <li class="footer-info__item"></li>
+              <li class="footer-info__item"></li>
+              <li class="footer-info__item"></li>
+              <li class="footer-info__item"></li>
+              <li class="footer-info__item"></li>
+            </ul>
+          </div>
 
-        <div class="f2">
-          <p class="f-title2">Contact us</p>
-          <a href="" class="f-link2">1827 Nickel Road, Los Angeles, CA, 90017, United States</a>
-          <a href="" class="f-link3">(414) 567 - 2109</a>
-          <a href="" class="f-link4">contact@cleaning.com</a>
-        </div>
+          <div class="footer-contact">
+            <p class="footer-contact__title">Contact us</p>
+            <a href="" class="footer-contact__link"
+              >1827 Nickel Road, Los Angeles, <br />
+              CA, 90017, United States</a
+            >
+            <a href="" class="footer-contact__link">(414) 567 - 2109</a>
+            <a href="" class="footer-contact__link">contact@cleaning.com</a>
+          </div>
 
-        <div class="f3">
-          <p class="f-title3">Hours</p>
-          <p>Monday to Friday</p>
-          <p>Saturday & Sunday</p>
-        </div>
+          <div class="footer-scedule">
+            <p class="footer-scedule__title">Hours</p>
+            <ul class="scedule-list">
+              <li class="scedule-list__item">
+                Monday to Friday<span class="scedule-list__time">6:00 AM - 9:00 PM</span>
+              </li>
+              <li class="scedule-list__item">
+                Saturday & Sunday<span class="scedule-list__time">8:00 AM - 8:00 PM</span>
+              </li>
+            </ul>
+          </div>
 
-        <div class="f4">
-          <b>Get a free estimate</b>
-          <a href="">(414) 567 - 2109</a>
-          <p>Lorem ipsum dolor sit amet ectetur adipiscing elit, sed do eiusmod.</p>
-          <button>Get a free quote</button>
+          <div class="footer-request">
+            <p class="footer-request__title">Get a free estimate</p>
+            <p href="" class="footer-request__number">(414) 567 - 2109</p>
+            <p class="footer-request__text">
+              Lorem ipsum dolor sit amet ectetur <br />
+              adipiscing elit, sed do eiusmod.
+            </p>
+            <button class="primary-button">Get a free quote</button>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <a href="/index.html" class="logo">
+            <svg width="178" height="42" class="logo__icon">
+              <use href="/images/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <p>Copyright © Cleaning X | Designed by BRIX Templates - Powered by Webflow - Licenses</p>
         </div>
       </div>
     </footer>

@@ -1,34 +1,16 @@
-.res-title {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
-
-  color: $primary-text-color;
-  margin-bottom: 10px;
-}
-
-.res-text {
-  font-size: 21px;
-  line-height: 30px;
-
-  color: $secondary-text-color;
-  width: 474px;
-}
-
 .pages__button-list {
   position: absolute;
   right: 0px;
   top: 24px;
 }
 
-.res-list {
+.article-list {
   display: flex;
   gap: 30px;
   margin-top: 10px;
 }
 
-.first-card {
-  background-image: url(/images/resources/vacuumres.png);
+.article-list__item {
   height: 630px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -37,21 +19,20 @@
   align-items: flex-end;
 }
 
-.second-card {
-  background-image: url(/images/resources/girlres.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+.article-list__item:nth-child(1) {
+  background-image: url(/images/resources/vacuumres.png);
 }
 
-.res-list li {
+.article-list__item:nth-child(2) {
+  background-image: url(/images/resources/girlres.png);
+}
+
+.article-list li {
   width: 596px;
   height: 630px;
 }
 
-.res-articles {
+.article-list__article {
   width: 536px;
   background-color: white;
   padding: 50px;
@@ -62,7 +43,7 @@
   border-radius: 24px;
 }
 
-.article-title {
+.article-list__caption {
   font-weight: 700;
   font-size: 24px;
   line-height: 34px;
@@ -71,7 +52,7 @@
   margin-bottom: 18px;
 }
 
-.articles-text {
+.article-list__text {
   font-size: 21px;
   line-height: 30px;
   /* or 143% */
@@ -80,7 +61,7 @@
   margin-bottom: 14px;
 }
 
-.articles-date {
+.article-list__date {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;

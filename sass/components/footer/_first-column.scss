@@ -1,9 +1,12 @@
-.flex {
+
+.footer-top {
   display: flex;
-  height: 637px;
+  align-items: center;
+  justify-content: space-between;
+  height: 522px;
 }
 
-.f-title {
+.footer-info__title {
   font-weight: 700;
   font-size: 28px;
   line-height: 36px;
@@ -14,7 +17,7 @@
   margin-bottom: 8px;
 }
 
-.f-text {
+.footer-info__text {
   font-size: 18px;
   line-height: 30px;
   /* or 167% */
@@ -24,18 +27,114 @@
   margin-bottom: 34px;
 }
 
-.f-list {
-    display: flex;
-    gap: 16px;
+.footer-info__list {
+  display: flex;
+  gap: 16px;
 }
 
-.f-list li {
-    width: 36px;
-    height: 36px;
-    background-color: #6e7191;
-    border-radius: 8px;
+.footer-info__item {
+  width: 36px;
+  height: 36px;
+  background-color: #6e7191;
+  border-radius: 8px;
 }
 
-.f2 {
-    display: flex;
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contact__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  /* identical to box height, or 110% */
+
+  color: #211f54;
+  margin-bottom: 32px;
+}
+
+.footer-contact__link {
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  color: #6e7191;
+}
+
+.footer-contact__link:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.footer-scedule__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  /* identical to box height, or 110% */
+
+  color: #211f54;
+  margin-bottom: 34px;
+}
+
+.scedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.scedule-list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  /* identical to box height, or 111% */
+
+  color: #211f54;
+}
+
+.scedule-list__time {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  /* identical to box height, or 167% */
+
+  color: #6e7191;
+}
+
+.footer-request__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  /* identical to box height, or 110% */
+
+  color: #211f54;
+  margin-bottom: 28px;
+}
+
+.footer-request__number {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  /* identical to box height, or 129% */
+
+  color: #0075ff;
+  margin-bottom: 6px;
+}
+
+.footer-request__text {
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  color: #6e7191;
+  margin-bottom: 20px;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  height: 115px;
+  justify-content: space-between;
 }
