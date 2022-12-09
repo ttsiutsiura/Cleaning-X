@@ -275,6 +275,10 @@ input {
 }
 
 @-webkit-keyframes call {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
   20% {
     -webkit-transform: rotate(-12deg);
             transform: rotate(-12deg);
@@ -302,10 +306,18 @@ input {
   90% {
     -webkit-transform: rotate(-12deg);
             transform: rotate(-12deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
 @keyframes call {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
   20% {
     -webkit-transform: rotate(-12deg);
             transform: rotate(-12deg);
@@ -333,6 +345,10 @@ input {
   90% {
     -webkit-transform: rotate(-12deg);
             transform: rotate(-12deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 .tel__text {
@@ -825,6 +841,17 @@ input {
   height: 630px;
 }
 
+.article-list__link {
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.article-list__link:hover, .article-list__link:focus {
+  -webkit-transform: translateY(-12px);
+          transform: translateY(-12px);
+}
+
 .article-list__article {
   width: 536px;
   background-color: white;
@@ -860,6 +887,11 @@ input {
   line-height: 20px;
   /* identical to box height, or 111% */
   color: #211f54;
+}
+
+.article-list__icon {
+  background-color: grey;
+  border-radius: 50%;
 }
 
 .footer-top {
@@ -932,6 +964,9 @@ input {
   line-height: 30px;
   /* or 167% */
   color: #6e7191;
+}
+.footer-contact__link:hover, .footer-contact__link:focus {
+  color: #0075FF;
 }
 
 .footer-contact__link:not(:last-child) {
@@ -1019,5 +1054,21 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-top: 1px solid #EFF0F6;
+  border-top: 1px solid #eff0f6;
+}
+
+.footer-privacy {
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+  color: #6e7191;
+}
+
+.footer-privacy__link {
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #0075ff;
 }/*# sourceMappingURL=main.css.map */
