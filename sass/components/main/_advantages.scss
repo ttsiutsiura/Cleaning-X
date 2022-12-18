@@ -1,13 +1,10 @@
-
-
 .advantages-text {
   margin-left: auto;
   margin-right: auto;
-
   width: 702px;
+
   font-size: 21px;
   line-height: 30px;
-
   text-align: center;
 
   color: $secondary-text-color;
@@ -17,18 +14,18 @@
   display: flex;
   justify-content: center;
   gap: 96px;
-
   margin-top: 32px;
 }
 
 .stat-list__circle {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  border: 1px solid #dcddeb;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 72px;
+  height: 72px;
+  
+  border: 1px solid #dcddeb;
+  border-radius: 50%;
 }
 
 .stats-list__accent {
@@ -43,9 +40,9 @@
   display: flex;
   align-items: center;
   gap: 16px;
+
   font-size: 16px;
   line-height: 18px;
-
   letter-spacing: 1.6px;
   text-transform: uppercase;
 
@@ -53,10 +50,9 @@
 }
 
 .stat-list__accent {
-  font-weight: 700;
   font-size: 28px;
-  line-height: 36px;
-  /* identical to box height, or 129% */
+  font-weight: 700;
+  line-height: 1.3;
 
   color: #211f54;
 }
@@ -64,6 +60,7 @@
 .video-thumb__video {
   width: 100%;
   height: 100%;
+  
   border-radius: 22px;
 }
 
@@ -73,6 +70,6 @@
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
+
   border-radius: 52px;
 }
-

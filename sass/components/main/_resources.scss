@@ -1,4 +1,4 @@
-.pages__button-list {
+.resources__button-list {
   position: absolute;
   right: 0px;
   top: 24px;
@@ -11,12 +11,13 @@
 }
 
 .article-list__item {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   height: 630px;
+
   background-repeat: no-repeat;
   background-size: contain;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
 .article-list__item:nth-child(1) {
@@ -43,38 +44,38 @@
 
 .article-list__article {
   width: 536px;
-  background-color: white;
   padding: 50px;
-  border-radius: 24px;
   box-sizing: border-box;
+
+  background-color: white;
   border: 1px solid #eff0f6;
-  box-shadow: 0px 2px 6px rgba(20, 20, 43, 0.04);
   border-radius: 24px;
+  box-shadow: 0px 2px 6px rgba(20, 20, 43, 0.04);
 }
 
 .article-list__caption {
-  font-weight: 700;
+  margin-bottom: 18px;
+
   font-size: 24px;
+  font-weight: 700;
   line-height: 34px;
 
   color: #211f54;
-  margin-bottom: 18px;
 }
 
 .article-list__text {
+  margin-bottom: 14px;
+
   font-size: 21px;
-  line-height: 30px;
-  /* or 143% */
+  line-height: 1.4;
 
   color: #6e7191;
-  margin-bottom: 14px;
 }
 
 .article-list__date {
-  font-weight: 700;
   font-size: 18px;
-  line-height: 20px;
-  /* identical to box height, or 111% */
+  font-weight: 700;
+  line-height: 1.1;
 
   color: #211f54;
 }

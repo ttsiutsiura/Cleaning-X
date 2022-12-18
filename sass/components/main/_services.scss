@@ -1,9 +1,9 @@
 .service-title {
   margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
 
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
   text-align: left;
 
   color: $primary-text-color;
@@ -26,29 +26,30 @@
 .service-list {
   display: flex;
   gap: 30px;
-  margin-bottom: 240px;
   margin-top: 38px;
+  margin-bottom: 240px;
 }
 
 .service-list__item {
-  width: 388px;
-  height: 494px;
-  border: 1px solid #eff0f6;
-  border-radius: 16px;
-  padding: 28px 38px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
+  width: 388px;
+  height: 494px;
+  padding: 28px 38px;
+
+  border: 1px solid #eff0f6;
+  border-radius: 16px;
 }
 
 .service-list__caption {
   margin-top: 24px;
   margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 34px;
 
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
   text-align: center;
 
   color: #211f54;
@@ -57,25 +58,25 @@
 .service-list__text {
   font-size: 21px;
   line-height: 30px;
-
   text-align: center;
 
   color: $secondary-text-color;
 }
 
 .covid {
-  margin-bottom: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   width: 1220px;
   height: 676px;
+  margin-bottom: 200px;
+
   background-color: #211f54;
-  border-radius: 24px;
   background-image: url(/images/services/covid-back.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  border-radius: 24px;
 }
 
 .covid-container {
@@ -83,14 +84,15 @@
 }
 
 .covid-container__caption {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 18px;
+  margin-bottom: 16px;
 
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
   letter-spacing: 1.6px;
   text-transform: uppercase;
+
   color: white;
-  margin-bottom: 16px;
 }
 
 .covid__tel-text {
@@ -102,35 +104,41 @@
 }
 
 .covid-container__title {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
-  color: white;
   margin-bottom: 20px;
+
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+
+  color: white;
 }
 
 .covid-container__text {
+  margin-bottom: 16px;
+  
   font-size: 21px;
   line-height: 30px;
+
   color: white;
-  margin-bottom: 16px;
 }
 
 .house {
-  width: 1220px;
-  height: 680px;
-  background-image: url(/images/services/house-details.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
   display: flex;
   align-items: center;
   justify-content: right;
+  width: 1220px;
+  height: 680px;
   margin-bottom: 200px;
+
+  background-image: url(/images/services/house-details.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .house-continer__title {
   margin-bottom: 20px;
-  font-weight: 700;
+
   font-size: 48px;
+  font-weight: 700;
   line-height: 58px;
 
   color: $primary-text-color;
@@ -138,6 +146,7 @@
 
 .service-subtitle {
   margin-bottom: 26px;
+
   font-size: 18px;
   line-height: 30px;
 
@@ -145,24 +154,24 @@
 }
 
 .house-list {
-  width: 350px;
-  height: 190px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
   row-gap: 24px;
   column-gap: 54px;
-  flex-wrap: wrap;
-  justify-content: center;
+  width: 350px;
+  height: 190px;
   margin-bottom: 48px;
 }
 
 .house-list__item {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
   display: flex;
   align-items: center;
   gap: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
 
   color: $primary-text-color;
 }
@@ -170,22 +179,23 @@
 .house-list__item::before {
   content: '';
 
+  display: inline-block;
   width: 26px;
   height: 26px;
+
   background-image: url(/images/anothercheck.svg);
-  display: inline-block; 
 }
 
 .differences {
+  display: flex;
+  align-items: center;
+  width: 1220px;
+  height: 588px;
+
   background-image: url(/images/services/backcleaning.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-  width: 1220px;
-  height: 588px;
-  display: flex;
-  align-items: center;
-  
 }
 
 .differences-container {
@@ -201,10 +211,9 @@
 .difference-list__item {
   display: flex;
   flex-direction: column;
-  font-weight: 700;
+
   font-size: 18px;
-  // line-height: 24px;
-  /* identical to box height, or 133% */
+  font-weight: 700;
 
   color: #6e7191;
 }
@@ -212,17 +221,13 @@
 .difference-list__number {
   font-weight: 700;
   font-size: 54px;
-  // line-height: 66px;
-  /* identical to box height, or 122% */
 
   color: #211f54;
 }
 
 .difference-list__plus {
   font-size: 54px;
-  // line-height: 66px;
   font-weight: 400;
-  /* identical to box height, or 122% */
 
   color: #0075ff;
 }

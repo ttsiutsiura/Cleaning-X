@@ -5,21 +5,21 @@ html {
 body {
   margin: 0;
 
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
 
+  color: var(--primary-text-color);
   background-color: var(--primary-background-color);
 }
 
 .visually-hidden {
   position: absolute;
 
-  margin: -1px;
-  padding: 0;
   width: 1px;
   height: 1px;
+  margin: -1px;
+  padding: 0;
 
   border: 0;
 
@@ -110,6 +110,7 @@ ol {
 
 a {
   text-decoration: none;
+  
   color: inherit;
 }
 

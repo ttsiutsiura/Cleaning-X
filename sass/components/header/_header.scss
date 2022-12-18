@@ -48,23 +48,24 @@
 .primary-button {
   padding: 26px 38px;
 
-  font-family: 'Roboto';
   font-size: 18px;
   font-weight: 700;
   line-height: 1.1;
-  color: white;
+  font-family: 'Roboto';
 
+  color: white;
   background-color: #0075ff;
   border: 1px solid #0075ff;
   border-radius: 14px;
+
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    transform: translateY(-6px);
-
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    transform: translateY(-6px);
   }
 }
 
